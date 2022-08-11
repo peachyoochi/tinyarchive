@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <div class="breadcrumb">
-    <a href="/"> Tiny Library </a> / <a href= "/archive"> Archive </a>
+    <a href="/"> Sunscreen Archive </a> / <a href= "/archive"> Archive </a>
 </div>
 <div class="page_title">
     {{item.name}}
@@ -19,8 +19,12 @@
     </div>
     <div class="info">
         <ul>
-            <li>Material: {{item.material}}</li>
-            <li>Description: <p>{{item.description}}</p> </li>
+            <li><b>Type: </b> <p>{{item.description}}</p> </li>
+            <li><b>Creator:</b> <p>{{item.creator}}</p> </li>
+            <li><b>Price:</b> <p>{{item.price}}</p> </li>
+            <li><b>Product Type:</b> <p>{{item.organic}}</p> </li>
+            <li><b>Ingredients: </b> <p>{{item.ingredients}}</p> </li>
+
             <!--if a 3d model exists, insert an iframe to a url for it. This code assumes that the sketchfab embedding code will work. 
             IF you would like it to be bigger or otherwise different in appearance, style the class sketchfab_embed_wrapper element
             with CSS-->

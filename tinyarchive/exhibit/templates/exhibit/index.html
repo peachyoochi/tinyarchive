@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/exhibit.css' %}">
 <div class="breadcrumb">
-    <a href="/"> Tiny Library </a>
+    <a href="/"> Sunscreen Archive </a>
 </div>
-<div class="page_title">
-    Exhibits
-</div>
+<h1 class="page_title">
+    Exhibit: Major Ingredients of Sunscreen
+</h1>
 <div class="content">
     {% if exhibits %}
     <ul>

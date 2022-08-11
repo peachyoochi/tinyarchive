@@ -1,38 +1,17 @@
-<<<<<<< HEAD
-h1   {
+head {
     color:cream;
     background-color: #fffcc9;
     text-align: center;
 }
+h1   {
+    background-color: #fffcc9;
+    text-align: center;
+    font-family: Chalkduster, fantasy;
+    color: lightskyblue;
+
+}
 body {
     background-color: #fefbea;
+    text-align: center;
+    margin: 25px 50px 75px 100px;
   }
-  body,h1 {font-family: "Noto Sans", sans-serif}
-h1 {letter-spacing: 6px}
-.w3-row-padding img {margin-bottom: 12px}
-
-a:link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: grey;
-  }
-  
-  a:active {
-    text-decoration: underline;
-  }
-
- #Display a list of links as a horizontal menu
-  li {
-    display: inline;
-  }
-
-
-  #dropdown

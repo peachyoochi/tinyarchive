@@ -51,20 +51,15 @@ class Photograph(ArchiveDocument):
 
 
 class Artifact(ArchiveDocument):
-    MAT_OTHER = 'other'
-    MAT_PLASTIC = 'plastic'
-    MAT_CERAMIC = 'ceramic'
-    MAT_GLASS = 'glass'
-    MAT_METAL = 'metal'
-
-    MATERIAL_CHOICES = [(MAT_OTHER, "Other"),
-                        (MAT_PLASTIC, "Plastic"),
-                        (MAT_CERAMIC, "Ceramic"),
-                        (MAT_GLASS, "Glass"),
-                        (MAT_METAL,"Metal")]
-    material = models.CharField(
-        max_length=50, choices=MATERIAL_CHOICES, default=MAT_GLASS)
-    model3d = models.URLField(max_length=500, blank="True")
+    MAT_INORGANIC = 'Inorganic'
+    MAT_ORGANIC = 'Organic'
+    MATERIAL_CHOICES = [(MAT_INORGANIC, "Inorganic"),
+                        (MAT_ORGANIC, "Organic")]
+    price = models.TextField()
+    organic = models.CharField(
+        max_length=50, choices=MATERIAL_CHOICES, default=MAT_INORGANIC)
+    ingredients = models.TextField()
+#    model3d = models.URLField(max_length=500, blank="True")
 
 
 class Document(ArchiveDocument):

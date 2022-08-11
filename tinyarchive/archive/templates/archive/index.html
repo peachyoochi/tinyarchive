@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <div class="breadcrumb">
-    <a href="/"> Tiny Library  </a>
+    <a href="/"> Sunscreen Archive  </a>
 </div>
-<div class="page_title">
+<h1 class="page_title">
     The Archive
-</div>
+</h1>
 
 
 <div class="content">
@@ -15,7 +16,7 @@
         <thead>
             <th> Preview </th>
             <th> Name </th>
-            <th> Description </th>
+            <th> Type </th>
         </thead>
         <tbody>
             {% for item in archive_items %}

@@ -64,6 +64,9 @@ def item_detail(request, item_id):
             "name": archive_item.name,
             "pictures": pictures,
             "description": archive_item.description,
+            "creator": archive_item.creator,
+            "price": archive_item.price,
+            "organic": archive_item.organic
         }
         if isinstance(archive_item, Photograph):
             # Photo type is the user-readable version of the Photo Type, as described in Consts.
