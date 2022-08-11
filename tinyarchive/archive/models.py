@@ -55,10 +55,10 @@ class Artifact(ArchiveDocument):
     MAT_ORGANIC = 'Organic'
     MATERIAL_CHOICES = [(MAT_INORGANIC, "Inorganic"),
                         (MAT_ORGANIC, "Organic")]
-    price = models.TextField()
+    price = models.TextField(default=' ')
     organic = models.CharField(
         max_length=50, choices=MATERIAL_CHOICES, default=MAT_INORGANIC)
-    ingredients = models.TextField()
+    ingredients = models.TextField(default= ' ')
 #    model3d = models.URLField(max_length=500, blank="True")
 
 
